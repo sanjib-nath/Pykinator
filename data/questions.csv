@@ -1,0 +1,8 @@
+feature,question
+male,"Is the character male?"
+one_piece,"Is the character from One Piece?"
+naruto,"Is the character from Naruto?"
+demon_slayer,"Is the character from Demon Slayer?"
+ninja,"Is the character a ninja?"
+pirate,"Is the character a pirate?"
+has_superpowers,"Does the character have superpowers?"
