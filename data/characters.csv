@@ -1,0 +1,11 @@
+name,male,one_piece,naruto,demon_slayer,ninja,pirate,has_superpowers,wears_glasses
+Monkey D. Luffy,true,true,false,false,false,true,true,false
+Roronoa Zoro,true,true,false,false,false,true,false,false
+Nami,false,true,false,false,false,true,false,false
+Naruto Uzumaki,true,false,true,false,true,false,true,false
+Sasuke Uchiha,true,false,true,false,true,false,true,false
+Sakura Haruno,false,false,true,false,true,false,true,false
+Kakashi Hatake,true,false,true,false,true,false,true,false
+Tanjiro Kamado,true,false,false,true,false,false,true,false
+Nezuko Kamado,false,false,false,true,false,false,true,false
+Shinobu Kocho,false,false,false,true,false,false,true,true
