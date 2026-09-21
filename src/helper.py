@@ -4,11 +4,12 @@ def load_data(path):
     df = pd.read_csv(path)
     return df
 
-def ask_question(feature, dataset):
-    questions = dict(zip(dataset['feature'], dataset['question']))
+def ask_question(feature, questions):
+    """question: dict of question dataset"""
+
     print(questions[feature])
 
-    accepted_ans = ('Y', 'N')
+    accepted_ans = ('Y', 'N', 'D')
  
     while True:
         ans = str(input())
