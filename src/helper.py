@@ -9,10 +9,10 @@ def ask_question(feature, questions):
 
     print(f"\n{questions[feature]}")
 
-    accepted_ans = ('Y', 'N', 'D')
+    accepted_ans = ('Y', 'N')
  
     while True:
-        ans = str(input("[Y]es / [N]o / [D]on't know: "))
+        ans = str(input("[Y]es / [N]o: "))
 
         if ans.upper() not in accepted_ans:
             print("Please enter [Y]es or [N]o")
@@ -25,5 +25,3 @@ def split_dataset(feature, ans, dataset):
         return dataset[dataset[feature] == True]
     elif ans.upper() == 'N':
         return dataset[dataset[feature] == False]
-    else: #if Don't know
-        return dataset
