@@ -3,21 +3,24 @@ import numpy as np
 class DecisionTree:
     """A modified version of decision tree to find the best spliting feature"""
 
-    def __init__(self, min_sample_split=2, max_depth=1):
-        self.min_sample_split = min_sample_split
-        self.max_depth = max_depth
-
     def best_feature(self, dataset):
         features = dataset.columns.tolist()[1:]
 
         info_gains = {}
         for feature in features:
             right, left = self.split(dataset, feature)
+
+            if right.empty or left.empty:
+                continue
+
             info_gain = self.information_gain(dataset['name'], right, left)
 
             info_gains[feature] = info_gain
 
-        return max(info_gains, key = info_gains.get) #type: ignore
+        if info_gains:
+            return max(info_gains, key = info_gains.get) #type: ignore
+        else:
+            return None
     
     def split(self, dataset, feature):
         right = dataset[dataset[feature] == True]
