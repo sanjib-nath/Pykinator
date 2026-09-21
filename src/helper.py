@@ -18,3 +18,11 @@ def ask_question(feature, dataset):
             continue
 
         return ans
+
+def split_dataset(feature, ans, dataset):
+    if ans == 'Y':
+        return dataset[dataset[feature] == True]
+    elif ans == 'N':
+        return dataset[dataset[feature] == False]
+    else: #if Don't know
+        return dataset
