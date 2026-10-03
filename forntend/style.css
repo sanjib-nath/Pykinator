@@ -12,8 +12,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-    background-color: #fff;
+    height: 100vh;
+    background-color: rgb(100, 97, 97);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .container{
@@ -21,8 +24,8 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    background-color: aqua;
+    padding-top: 200px;
+    padding-bottom: 10px;
 }
 
 .speech-0{
@@ -30,7 +33,7 @@ body{
     top: -60px;
     flex: 1;
     padding: 20px;
-    max-width: 200px;
+    max-width: 260px;
     border: 1px solid #dfdddd; 
     border-radius: 7px;
     background-color: #fff;
@@ -45,4 +48,58 @@ body{
     border: 1px solid #dfdddd;
     border-radius: 7px;
     background-color: #fff;
+}
+
+.btn{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 48px;
+}
+
+.btn a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: #fff;
+}
+
+footer{
+    background-color: rgb(55, 195, 230);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav{
+    padding: 20px;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-nav ul li a{
+    color: #fff;
+    margin: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover{
+    color: #e6e3e3;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e6e3e3;
+    transition-delay: 0.2s;
+}
+
+.footer-bottom{
+    background-color: rgb(46, 159, 187);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
